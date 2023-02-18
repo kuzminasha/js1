@@ -65,33 +65,36 @@ console.log("\n")
 
 //задача 5
 
-// let answer = 3;
-// let numb = prompt('Угадайте число', '');
-// while (numb !== answer) {
-    // if (isNaN(numb)){
-        // console.log('Ошибка, введено не число');
-    // }else if(answer > numb){
-        // console.log('Ваше число меньше');
-    // }else if(answer < numb){
-        // console.log('Ваше число больше');
-    // }else if(numb == answer){
-        // console.log('Вы угадали!');
-        // break;
-    // }
-    // numb = prompt('Угадайте число', '');
-// }
+let answer = 3;
+let numb;
+do{
+    numb = prompt('Угадайте число', '');
+    if (isNaN(numb)){
+        console.log('Ошибка, введено не число');
+    }else if(answer > numb){
+        console.log('Ваше число меньше');
+    }else if(answer < numb){
+        console.log('Ваше число больше');
+    }else if(numb == answer){
+        console.log('Вы угадали!');
+        break;
+}} while (numb !== answer);
 console.log("\n")
 
 //задача 6
 
-let n = 12, x = 3, y = 4;
-let flag;
-flag = (n % x) + (n % y);
-if(flag == 0){
-    console.log(true);
-}else{
-    console.log(false);
-}
+// let n = prompt('Введите делимое', '');
+// let x = prompt('Введите делитель', '');
+// let y = prompt('Введите делитель', '');
+// console.log(`n = ${n}, x = ${x}, y = ${y}, `);
+// let flag;
+// flag = (n % x) + (n % y);
+// if(flag == 0){
+    // console.log(true);
+// }else{
+    // console.log(false);
+// }
+// console.log("\n")
 
 //задача 7
 
